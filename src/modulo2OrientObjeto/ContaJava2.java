@@ -3,7 +3,7 @@ package modulo2OrientObjeto;
 
 public class ContaJava2 {
 	
-double saldo;
+double saldo =100 ;
 int agencia;
 int numero;
 ClienteJava titular;
