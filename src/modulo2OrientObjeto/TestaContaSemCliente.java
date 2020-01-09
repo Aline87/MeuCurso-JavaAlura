@@ -2,19 +2,20 @@ package modulo2OrientObjeto;
 
 public class TestaContaSemCliente {
 	public static void main(String[] args) {
-		ContaJava2 contaDaMarcela = new ContaJava2();
 		
-		System.out.println("Saldo disponivel em conta: " + contaDaMarcela.saldo );
-		contaDaMarcela.titular= new ClienteJava();
-	    contaDaMarcela.titular.nome="Nome do Cliente : Marcela";
-		System.out.println(contaDaMarcela.titular.nome);
+		ContaJava2 Marcela = new ContaJava2(0, 0);
+
+		System.out.println("Saldo disponivel em conta: " + Marcela.getSaldo());
+		//ClienteJava contaDaMarcela = new ClienteJava();
 		
-		contaDaMarcela.titular= new ClienteJava();
-		contaDaMarcela.titular.CPF="Numero do CPF:346.796.528-88";
-		System.out.println(contaDaMarcela.titular.CPF);
-		
-		contaDaMarcela.titular= new ClienteJava();
-		contaDaMarcela.titular.profissao="Profissao: Programador";
-		System.out.println(contaDaMarcela.titular.profissao);
-}
+		Marcela.setTitular("Marcela");
+		System.out.println("Nome do cliente " + Marcela.getTitular());
+
+		ClienteJava contaDaMarcela = new ClienteJava();
+		contaDaMarcela.setCPF("346.796.528-88");
+		System.out.println("CPF: " + contaDaMarcela.getCPF());
+
+		contaDaMarcela.setProfissao("Programador");
+		System.out.println("Profissão do titular: " + contaDaMarcela.getProfissao());
+	}
 }
