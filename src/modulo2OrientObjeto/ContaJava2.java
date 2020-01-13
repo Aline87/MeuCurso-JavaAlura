@@ -1,5 +1,4 @@
 package modulo2OrientObjeto;
-
 public class ContaJava2 {
 
 	private double saldo = 100;
@@ -11,7 +10,8 @@ public class ContaJava2 {
 	public ContaJava2(int agencia, int numero) {
 		this.agencia = agencia;
 		this.numero = numero;
-		total++;
+	    this.saldo =100; 
+		total++; 
 		System.out.println("o total de contas é " + total);
 
 	}
@@ -75,8 +75,8 @@ public class ContaJava2 {
 		this.agencia = agencia;
 
 	}
-	public int getTotal() {
-		return ContaJava2.total;
+	public static int getTotal() {
+		return total;
 
 	}
 
