@@ -1,4 +1,4 @@
-package meubanco;
+package meuBanco;
 
 public class TesteReferencia {
 	public static void main(String[] args) {

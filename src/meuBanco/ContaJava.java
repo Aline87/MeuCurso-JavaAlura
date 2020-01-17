@@ -1,4 +1,4 @@
-package meubanco;
+package meuBanco;
 
     public class ContaJava {
 	double saldo;

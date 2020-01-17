@@ -1,4 +1,4 @@
-package meubanco;
+package meuBanco;
 
 public class CriaConta {
 	public static void main(String[] args) {
