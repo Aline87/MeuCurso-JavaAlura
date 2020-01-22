@@ -4,6 +4,7 @@ public class TesteReferencias {
 
 	public static void main(String[] args) {
           
+		
 		  Gerente g1 = new Gerente();
           g1.setNome("Marcos");
           g1.setSalario(5000.0);
@@ -20,7 +21,9 @@ public class TesteReferencias {
           controle.registra(ev);
           controle.registra (d); 
          
+          System.out.println("--------Pronto---------");
           System.out.println(controle.getSoma());
+          System.out.println("-----------------------");
 
           
 

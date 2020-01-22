@@ -1,6 +1,6 @@
 package BancoAline;
 
-public class ContaCorrente extends ContaJava2 {
+public class ContaCorrente extends ContaJava2 implements Tributavel {
 
 	 public ContaCorrente( int agencia, int numero){
 		 super(agencia,numero );
@@ -16,6 +16,13 @@ public class ContaCorrente extends ContaJava2 {
 		super.saldo +=valor;
 		
 }
+	@Override
+	public double getValorImposto() {
+		// TODO Auto-generated method stub
+		return super.saldo * 0.01;
+		
+				
+	}
 }
 
 	

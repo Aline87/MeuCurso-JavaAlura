@@ -1,6 +1,6 @@
 package modulo3Heranca;
 
-public class TESTE2 {
+public class Teste {
 
 	public static void main(String[] args) {
 		FuncionarioTeste f1 = new FuncionarioTeste();
