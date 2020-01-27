@@ -22,26 +22,22 @@ public abstract class ContaJava2 {
 	public abstract void deposita(double valor);
 		
 
-	public boolean saca(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
-		} else {
-			return false;
+	public void saca(double valor) throws SaldoInsuficienteException {
+		if (this.saldo < valor) {
+			throw new SaldoInsuficienteException (" Saldo:"+ this.saldo+"Valor "+ valor);
+			
 		}
+		
+			this.saldo-=valor;
+			
 	}
 
-	public boolean transfere (double valor, ContaJava2 destino) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			destino.deposita(valor);
-			return true;
-		}
-		return false;
-
+	public void transfere (double valor, ContaJava2 destino) throws SaldoInsuficienteException  {
+		this.saca(valor);
+		destino.deposita(valor);
+		
 	}
 	
-
 	public String getTitular() {
 		return titular;
 	}
