@@ -2,7 +2,8 @@ package BancoAline;
 
 public class ContaCorrente extends ContaJava2 implements Tributavel {
 
-	 public ContaCorrente( int agencia, int numero){
+	 private static final Object Super = null;
+	public ContaCorrente( int agencia, int numero){
 		 super(agencia,numero );
 		 
 	 }
@@ -21,9 +22,15 @@ public class ContaCorrente extends ContaJava2 implements Tributavel {
 		// TODO Auto-generated method stub
 		return super.saldo * 0.01;
 		
-				
-	}
 }
+ 
+	public String toString() {
+    	return"ContaCorrente:" + super.toString();
+   }
+}
+
+
+
 
 	
 

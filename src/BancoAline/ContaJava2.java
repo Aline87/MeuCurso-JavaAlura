@@ -3,8 +3,8 @@ package BancoAline;
 public abstract class ContaJava2 {
 
 	protected double saldo = 100;
-	private int agencia;
-	private int numero;
+	protected int agencia;
+	protected int numero;
 	private String titular;
     private  static int total; 
     
@@ -79,4 +79,13 @@ public abstract class ContaJava2 {
 	public void setTotal(ClienteJava titular) {
 		return;
 	}
+
+	
+	    	
+
+	 public String toString() {
+	    	return "Numero:" + this.numero + "Agencia:" + this.agencia;
+	 }
 }
+
+	 
