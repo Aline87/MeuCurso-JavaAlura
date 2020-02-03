@@ -15,7 +15,7 @@ public abstract class ContaJava2 {
 		this.numero = numero;
 	    this.saldo =100; 
 		total++; 
-		System.out.println("o total de contas é " + total);
+	
 
 	}
 
@@ -64,7 +64,7 @@ public abstract class ContaJava2 {
 
 	public void setAgencia(int agencia) {
 		if (agencia <= 0) {
-			System.out.println("não pode valor menor igual a 0");
+			
 			return;
 
 		}

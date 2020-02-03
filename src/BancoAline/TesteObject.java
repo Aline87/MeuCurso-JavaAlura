@@ -1,7 +1,7 @@
 package BancoAline;
 
 
-public class Teste {
+public class TesteObject {
 	
 	public static void main(String[] args) {
 		
