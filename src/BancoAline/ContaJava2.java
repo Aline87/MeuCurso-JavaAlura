@@ -73,10 +73,23 @@ public abstract class ContaJava2 {
 	}
 	public static int getTotal() {
 		return total;
-
 	}
+		
+		
+	public boolean equals (Object ref){
+		ContaJava2 outra = (ContaJava2) ref;
+		
+		if (this.agencia != outra.agencia) {
+			return false;
+		}
+		if (this.numero!= outra.numero) {
+			return false;
+		}
+		return true;
+	    }
+	
 
-	public void setTotal(ClienteJava titular) {
+    public void setTotal(ClienteJava titular) {
 		return;
 	}
 
